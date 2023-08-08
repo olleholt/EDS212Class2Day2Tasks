@@ -94,8 +94,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="section-2-day-2-tasks" class="level2">
-<h2 class="anchored" data-anchor-id="section-2-day-2-tasks">Section 2 Day 2 Tasks</h2>
+<section id="section-3-day-2-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="section-3-day-2-tasks">Section 3 Day 2 Tasks</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -145,6 +145,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1] 4214.784</code></pre>
 </div>
 </div>
+</section>
+<section id="section-4-day-2-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="section-4-day-2-tasks">Section 4 Day 2 Tasks</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="fu">aes</span>(<span class="at">x=</span>bill_length_mm, <span class="at">y=</span>bill_depth_mm,<span class="at">color=</span>species))<span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Bill Length (mm)"</span>,<span class="at">y=</span><span class="st">"Bill Depth (mm)"</span>,<span class="at">title=</span><span class="st">" Palmer Penguin Bill Length versus Depth"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="EDS212Class2Day2Tasks_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<section id="now-making-a-jitter-plot" class="level3">
+<h3 class="anchored" data-anchor-id="now-making-a-jitter-plot">Now making a Jitter Plot</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="fu">aes</span>(<span class="at">x=</span>species, <span class="at">y=</span>flipper_length_mm,<span class="at">color=</span>species))<span class="sc">+</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>()<span class="sc">+</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Species"</span>,<span class="at">y=</span><span class="st">"Flipper Flipper (mm)"</span>,<span class="at">title=</span><span class="st">" Palmer Penguin Flipper Length of Species"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="EDS212Class2Day2Tasks_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
 </section>
 
 </main>

@@ -32,3 +32,19 @@ dP_da
 slope = eval(dP_da)
 slope
 ```
+
+## Section 4 Day 2 Tasks
+
+```{r}
+ggplot(data = penguins, aes(x=bill_length_mm, y=bill_depth_mm,color=species))+
+  geom_point()+
+  labs(x="Bill Length (mm)",y="Bill Depth (mm)",title=" Palmer Penguin Bill Length versus Depth")
+```
+
+### Now making a Jitter Plot
+
+```{r}
+ggplot(data = penguins, aes(x=species, y=flipper_length_mm,color=species))+
+  geom_jitter()+
+  labs(x="Species",y="Flipper Flipper (mm)",title=" Palmer Penguin Flipper Length of Species")
+```
