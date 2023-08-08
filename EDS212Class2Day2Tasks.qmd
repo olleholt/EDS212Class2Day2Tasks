@@ -37,7 +37,7 @@ slope
 
 ```{r}
 ggplot(data = penguins, aes(x=bill_length_mm, y=bill_depth_mm,color=species))+
-  geom_point()+
+  geom_point(shape=6)+
   labs(x="Bill Length (mm)",y="Bill Depth (mm)",title=" Palmer Penguin Bill Length versus Depth")
 ```
 
@@ -45,6 +45,7 @@ ggplot(data = penguins, aes(x=bill_length_mm, y=bill_depth_mm,color=species))+
 
 ```{r}
 ggplot(data = penguins, aes(x=species, y=flipper_length_mm,color=species))+
-  geom_jitter()+
+  geom_jitter(shape=18)+
+  scale_color_manual(values = c("purple","cyan3","goldenrod"))+
   labs(x="Species",y="Flipper Flipper (mm)",title=" Palmer Penguin Flipper Length of Species")
 ```
