@@ -8,3 +8,27 @@ title: "EDS212Class2Day2Tasks"
 library(tidyverse)
 library(palmerpenguins)
 ```
+
+## Finding Derivatives in R
+
+example 1
+
+```{r}
+fx = expression(x ^ 2)
+x = 3
+df_dx = D(fx,'x')
+df_dx
+slope = eval(df_dx)
+slope
+```
+
+next example
+
+```{r}
+Pa = expression(2*((3*a + 2)^4) - 5)
+a = 1.2
+dP_da = D(Pa,'a')
+dP_da
+slope = eval(dP_da)
+slope
+```
